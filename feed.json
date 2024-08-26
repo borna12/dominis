@@ -1,0 +1,43 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Nikola Tesla - igre",
+    "description": "",
+    "home_page_url": "https://borna12.github.io/tesla",
+    "feed_url": "https://borna12.github.io/tesla/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Josip Mihaljević; Marijana Borić"
+    },
+    "items": [
+        {
+            "id": "https://borna12.github.io/tesla/pamtilica.html",
+            "url": "https://borna12.github.io/tesla/pamtilica.html",
+            "title": "Pamtilica",
+            "summary": "yx&lt;xy&lt;xy&lt;xy&lt;x",
+            "content_html": "yx&lt;xy&lt;xy&lt;xy&lt;x<img class=\"post__image--full\" src=\"https://borna12.github.io/tesla/media/posts/2/pamtilica.jpg\" alt=\"\" width=\"602\" height=\"476\">",
+            "image": "https://borna12.github.io/tesla/media/posts/2/pamtilica.jpg",
+            "author": {
+                "name": "Josip Mihaljević; Marijana Borić"
+            },
+            "tags": [
+            ],
+            "date_published": "2020-02-16T18:24:04+01:00",
+            "date_modified": "2020-02-16T18:26:49+01:00"
+        },
+        {
+            "id": "https://borna12.github.io/tesla/slagalice.html",
+            "url": "https://borna12.github.io/tesla/slagalice.html",
+            "title": "Slagalice",
+            "summary": "neki tekst",
+            "content_html": "neki tekst",
+            "image": "https://borna12.github.io/tesla/media/posts/1/Propagandni-letak-Tesla-Company-New-York.jpg",
+            "author": {
+                "name": "Josip Mihaljević; Marijana Borić"
+            },
+            "tags": [
+            ],
+            "date_published": "2020-02-16T18:18:31+01:00",
+            "date_modified": "2020-02-16T18:18:31+01:00"
+        }
+    ]
+}

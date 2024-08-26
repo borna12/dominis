@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Slagalice (Mark Antun de Dominis)</title>
+    <meta name="description" content="Zabavi se uz različite slaglice vezane za Marka Antuna de Dominisa.">
+    <meta name="author" content="Josip Mihaljević">
+    <link rel="stylesheet" href="../stlye.css" />
+    <link rel="stylesheet" href="css/stil.css" />
+    <script src="assets/createjs_1.1_min.js"></script>
+    <script>
+        var zon = true; // set to false to turn off console messages from zim
+        var zns = false; // set to true to require zim namespace - eg. new zim.Frame()
+    </script>
+    <script src="assets/zim_6.9.0.js"></script>
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/index.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <meta property="og:title" content="Slagalice (Mark Antun de Dominis)" />
+    <meta property="og:description" content="Zabavi se uz različite slaglice vezane za Marka Antuna de Dominisa." />
+    <meta property="og:image" content="og-slika.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <script src="assets/sweetalert2.min.js"></script>
+    <script src='assets/lightzoom.js'></script>
+</head>
+
+<body>
+     
+    <div id="myModal" class="modal" >
+        <div class="modal-content">
+            <div class="topnav" id="myTopnav">
+    </div>
+            <div id="content">
+                <h1 class="naslov hr">Slagalice</h1>
+                <h1 class="naslov eng">Puzzles</h1>
+                <p class="opis hr">odaberite broj komadića i pritisnite jednu od slika za slaganje</p>
+                <p class="opis eng">choose the number of puzzle pieces and then choose an image</p>
+                <div style="text-align: center;">
+                    <div class="kom_izbornik">
+                        <span class="retci-oznaka hr">broj komadića po retcima:</span>
+                        <span class="retci-oznaka eng">number of pieces in row:</span>
+                        <select id="retci" onchange="broj()">
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="7">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">20</option>
+
+                        </select>
+                    </div>
+                    <div class="kom_izbornik">
+                        <span class="stupci-oznaka hr">broj komadića po stupcima:</span>
+                        <span class="stupci-oznaka eng">number of pieces in column:</span>
+                        <select id="stupci" onchange="broj()">
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5" selected>5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="7">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+
+                        </select>
+                    </div>
+                </div>
+                <p class="centar"><span class="ukupan hr">ukupan broj komadića za slaganje: </span><span class="ukupan eng">total number of pieces: </span><span id="broj-puzzla"></span></p>
+                <div class="grid">
+                    <div class="kartice" style="text-align:right"><img src="assets/1.jpg" class="ikone" onclick="slika = '1.jpg'; naslov= 'Dominisov rodni zavičaj – Rab';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/2.jpg" class="ikone" onclick="slika = '2.jpg'; naslov= 'Willem Jacobs Delff, (prema Dominisovom zagubljenom portretu kojeg je načinio  Michiell Van Mierevelt 1616. godine u Haagu), Hrvatski državi arhiv, Zagreb, bakrorez, 12,5x18 cm';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/3.jpg" class="ikone" onclick="slika = '3.jpg'; naslov= 'Loreto - Isusovačko učilište na kome se školovao Dominis';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/4.jpg" class="ikone" onclick="slika = '4.jpg'; naslov= 'Raffaelo Mele (?), Portret Marka Antuna de Dominisa, Biskupova palača Split, ulje na platnu, 64,5x53 cm';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/5.jpg" class="ikone" onclick="slika = '5.jpg'; naslov= 'Dalekozor - novi instrument 17. stoljeća';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/6.jpg" class="ikone" onclick="slika = '6.jpg'; naslov= 'Utvrda Nehaj iznad Senja -  uporište uskocima za obranu od Osmanlija i Mlečana';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/7.jpg" class="ikone" onclick="slika = '7.jpg'; naslov= 'Nepoznati slikar, Portret Marka Antuna de Dominisa, Hrvatski povijesni muzej, Zagreb, ulje na platnu, dim. 75,5 x 55 cm';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/8.jpg" class="ikone" onclick="slika = '8.jpg'; naslov= 'Faust Vrančić - hrvatski učenjak, biskup, izumitelj svjetskog glasa, otac hrvatske leksikografije kancelar Ugarske i Transilvanije.';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/9.jpg" class="ikone" onclick="slika = '9.jpg'; naslov= 'Duga kao predmet Dominisovih fizikalnih istraživanja';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/10.jpg" class="ikone" onclick="slika = '10.jpg'; naslov= 'Mala palača Dominis, Rab – nasljeđe plemičke oitelji Dominis';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/11.jpg" class="ikone" onclick="slika = '11.jpg'; naslov= 'Grb plemićke obitelji Dominis – Europska visoka elita hrvatskoga kova';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/12.jpg" class="ikone" onclick="slika = '12.jpg'; naslov= 'Splitska katedrala sv. Dujma na Peristilu - Dominis kao nadbiskup u Splitu i primas Dalmacije i Hrvatske';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/13.jpg" class="ikone" onclick="slika = '13.jpg'; naslov= 'Dominisov sukob s Rimskom kurijom';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/14.jpg" class="ikone" onclick="slika = '14.jpg'; naslov= 'Venecija, bazilika sv. Marka – Dominis u službi Mletačke Republike';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/15.jpg" class="ikone" onclick="slika = '15.jpg'; naslov= 'Galileio pokazuje dalekozor Senatu Mletačke Replike  - O otkriću dalekozora';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/16.jpg" class="ikone" onclick="slika = '16.jpg'; naslov= 'Domenico Tintoretto, Portret Marka Antuna de Dominisa, Chatsworth, Devonshire Collections, ulje na platnu, bez okvira 152,6x109,5cm';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/17.jpg" class="ikone" onclick="slika = '17.jpg'; naslov= 'Dominisovo životno djelo De republica ecclesiastica (O crkvenoj državi)';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/18.jpg" class="ikone" onclick="slika = '18.jpg'; naslov= 'Windsor – kralj dodjeljuje Dominisu titulu dekana kraljevskog kaptola u Windsoru';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/19.jpg" class="ikone" onclick="slika = '19.jpg'; naslov= 'Engleski kralj Jakov I.  – Dominis postaje kraljev privati kapelan';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/20.jpg" class="ikone" onclick="slika = '20.jpg'; naslov= 'Povratak u Rimu – u rukama inkvizicije zatoče u Ađeoskoj tvrđavi';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/21.jpg" class="ikone" onclick="slika = '21.jpg'; naslov= 'Windsor – Dominisovi novi problemi na obzoru';stvori();"></div>
+                    <div class="kartice" style="text-align:left"><img src="assets/22.jpg" class="ikone" onclick="slika = '22.jpg'; naslov= 'Splitska katedrala sv. Dujma – O Dominisovom duhovnom nasljeđu';stvori();"></div>
+                </div>
+                <div class="centar" style="display:none">
+                    <a href="#" onclick="localStorage.setItem('jezik','hr');promijeni_jezik()"> <img src="hr.png"  class="zastavice hrvatski" /></a>
+                    <a href="#" onclick="localStorage.setItem('jezik','eng');promijeni_jezik()"> <img src="en.png" class="zastavice engleski" /></a>
+    
+                </div>
+                <!--<p class="centar"  ><a href="../" style="text-align: center; color: rgb(104, 0, 2);" id="nazad">ODABERI DRUGU IGRU</a></p>-->
+            </div>
+        </div>
+    </div>
+<style>
+     .zab {
+            background-color: rgb(104, 0, 2)!important;
+        }
+    .swal2-confirm {background-color: rgb(104, 0, 2)!important;}
+    
+</style>
+
+</body>
+
+</html>

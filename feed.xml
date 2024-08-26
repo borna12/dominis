@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Nikola Tesla - igre</title>
+    <link href="https://borna12.github.io/tesla/feed.xml" rel="self" />
+    <link href="https://borna12.github.io/tesla" />
+    <updated>2020-02-22T19:52:42+01:00</updated>
+    <author>
+        <name>Josip Mihaljević; Marijana Borić</name>
+    </author>
+    <id>https://borna12.github.io/tesla</id>
+
+    <entry>
+        <title>Pamtilica</title>
+        <author>
+            <name>Josip Mihaljević; Marijana Borić</name>
+        </author>
+        <link href="https://borna12.github.io/tesla/pamtilica.html"/>
+        <id>https://borna12.github.io/tesla/pamtilica.html</id>
+
+        <updated>2020-02-16T18:26:49+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://borna12.github.io/tesla/media/posts/2/pamtilica.jpg" alt="" />
+                    yx&lt;xy&lt;xy&lt;xy&lt;x
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://borna12.github.io/tesla/media/posts/2/pamtilica.jpg" alt="" />
+                yx&lt;xy&lt;xy&lt;xy&lt;x<img class="post__image--full" src="https://borna12.github.io/tesla/media/posts/2/pamtilica.jpg" alt="" width="602" height="476">
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Slagalice</title>
+        <author>
+            <name>Josip Mihaljević; Marijana Borić</name>
+        </author>
+        <link href="https://borna12.github.io/tesla/slagalice.html"/>
+        <id>https://borna12.github.io/tesla/slagalice.html</id>
+
+        <updated>2020-02-16T18:18:31+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://borna12.github.io/tesla/media/posts/1/Propagandni-letak-Tesla-Company-New-York.jpg" alt="" />
+                    neki tekst
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://borna12.github.io/tesla/media/posts/1/Propagandni-letak-Tesla-Company-New-York.jpg" alt="" />
+                neki tekst
+            ]]>
+        </content>
+    </entry>
+</feed>
