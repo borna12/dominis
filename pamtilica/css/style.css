@@ -301,13 +301,13 @@ body {
 #prva:hover,
 #druga:hover,
 #treca:hover,.swal2-styled:hover {
-    background: -webkit-linear-gradient(#2c1c9a,#3228B0);
-    background: linear-gradient(#2c1c9a,#3228B0);
+    background: -webkit-linear-gradient(#8c271a,#D34836);
+    background: linear-gradient(#8c271a,#D34836);
 }
 
 .modal .restart:hover {
-    background: -webkit-linear-gradient(#2c1c9a,#3228B0);
-    background: linear-gradient(#2c1c9a,#3228B0);
+    background: -webkit-linear-gradient(#8c271a,#D34836);
+    background: linear-gradient(#8c271a,#D34836);
 }
 
 .modal .message {
