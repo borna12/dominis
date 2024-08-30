@@ -83,16 +83,16 @@
       }
       
       #broj-puzzla {
-          color: rgb(35, 79, 173);
+          color: #8c271a;
           text-shadow: 0 0 1px black;
       }
 
-      .swal2-styled{background: -webkit-linear-gradient(#3228B0, #2c1c9a);
-        background: linear-gradient(#3228B0, #2c1c9a)}
+      .swal2-styled{background: -webkit-linear-gradient(#D34836,#8c271a);
+        background: linear-gradient(#D34836,#8c271a)}
 
         .swal2-styled:hover {
-            background: -webkit-linear-gradient(#2c1c9a,#3228B0);
-            background: linear-gradient(#2c1c9a,#3228B0);
+            background: -webkit-linear-gradient(#8c271a,#D34836);
+            background: linear-gradient(#8c271a,#D34836);
         }
         
       

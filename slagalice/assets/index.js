@@ -154,7 +154,7 @@ var frame = new Frame({
             text: "CLICK",
             size: 60,
             font: "sans-serif",
-            color: "#3228B0",
+            color: "#8c271a",
             rollColor: "#2c1c9a",
             fontOptions: "italic bold"
         });
@@ -163,7 +163,7 @@ var frame = new Frame({
             text: "CLICK",
             size: 40,
             font: "sans-serif",
-            color: "#3228B0",
+            color: "#8c271a",
             rollColor: "#2c1c9a",
             fontOptions: "italic bold"
         });

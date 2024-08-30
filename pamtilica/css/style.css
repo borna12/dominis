@@ -284,8 +284,8 @@ body {
     display: block;
     font-size: 16px;
     border: none;
-    background: -webkit-linear-gradient(#3228B0, #2c1c9a);
-    background: linear-gradient(#3228B0, #2c1c9a);
+    background: -webkit-linear-gradient(#D34836,#8c271a);
+    background: linear-gradient(#D34836,#8c271a);
     border: 1px solid #222;
     border-radius: 5px;
     color: white;
